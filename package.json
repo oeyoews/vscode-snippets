@@ -1,0 +1,42 @@
+{
+  "name": "vscode-snippets2",
+  "displayName": "vscode-snippets2",
+  "description": "",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oeyoews/vscode-snippets#readme"
+  },
+  "author": {
+    "name": "oeyoews"
+  },
+  "publisher": "oeyoews",
+  "pricing": "Free",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Snippets"
+  ],
+  "scripts": {
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/js.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.24.0"
+  }
+}

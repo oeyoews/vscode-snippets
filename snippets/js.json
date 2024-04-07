@@ -1,0 +1,21 @@
+{
+	"Log": {
+		"prefix": "clog",
+		"body": "console.log($1)",
+		"description": "console.log()"
+	},
+	"esm": {
+		"prefix": "esm",
+		"body": [
+			"export default {",
+			"\t$1",
+			"}"
+		]
+	},
+	"const": {
+		"prefix": "cst",
+		"body": [
+			"const ${1:foo} = ${2:value}"
+		]
+	}
+}
