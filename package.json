@@ -2,7 +2,7 @@
   "name": "vscode-snippets2",
   "displayName": "vscode-snippets2",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/oeyoews/vscode-snippets#readme"
@@ -35,7 +35,7 @@
         "path": "./snippets/html.json"
       },
       {
-        "language": "json",
+        "language": "jsonc",
         "path": "./snippets/json.json"
       }
     ]
