@@ -1,5 +1,5 @@
 {
-  "Html-tailwindcss": {
+  "html with tailwindcss": {
     "prefix": "html-tailwindcss",
     "body": [
       "<!doctype html>",

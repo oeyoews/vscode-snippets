@@ -1,12 +1,12 @@
 {
-  "Clg": {
+  "console.log": {
     "prefix": "clg",
     "body": [
       "console.log(${1})"
     ],
     "description": "console.log"
   },
-  "Cjson": {
+  "对象log": {
     "prefix": "cjson",
     "body": [
       "console.log('$data', JSON.stringify($data))"

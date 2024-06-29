@@ -1,6 +1,6 @@
 {
-  "'vscode-dev'": {
-    "prefix": "'vscode-dev'",
+  "launch json": {
+    "prefix": "vscode-dev",
     "body": [
       "{",
       "\t\"version\": \"0.2.0\",",

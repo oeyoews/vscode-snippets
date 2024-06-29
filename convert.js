@@ -20,14 +20,10 @@ function convertUltiSnipsToVSCode(ultiSnipsFile, vscodeSnippetsFile) {
         });
     }
 
-    function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-
     lines.forEach(line => {
         if (line.startsWith('snippet')) {
             if (snippetName) {
-                vscodeSnippets[capitalizeFirstLetter(snippetName)] = {
+                vscodeSnippets[description] = {
                     prefix: prefix,
                     body: body.filter(line => line.trim() !== ''),
                     description: description
@@ -40,7 +36,7 @@ function convertUltiSnipsToVSCode(ultiSnipsFile, vscodeSnippetsFile) {
             prefix = parts[3] || snippetName;
         } else if (line.startsWith('endsnippet')) {
             if (snippetName) {
-                vscodeSnippets[capitalizeFirstLetter(snippetName)] = {
+                vscodeSnippets[description] = {
                     prefix: prefix,
                     body: body.filter(line => line.trim() !== ''),
                     description: description
@@ -59,7 +55,7 @@ function convertUltiSnipsToVSCode(ultiSnipsFile, vscodeSnippetsFile) {
 
     // Write any remaining snippet to the output file
     if (snippetName) {
-        vscodeSnippets[capitalizeFirstLetter(snippetName)] = {
+        vscodeSnippets[description] = {
             prefix: prefix,
             body: body.filter(line => line.trim() !== ''),
             description: description
@@ -95,4 +91,3 @@ if (!fs.existsSync(destDir)) {
 }
 
 convertAllSnippets(srcDir, destDir);
-
