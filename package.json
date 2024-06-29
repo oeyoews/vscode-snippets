@@ -22,8 +22,10 @@
   ],
   "scripts": {
     "package": "vsce package --no-dependencies",
+    "pre-package": "vsce package --no-dependencies --pre-release",
     "convert": "node ./convert.js",
-    "publish": "vsce publish --no-dependencies"
+    "publish": "vsce publish --no-dependencies",
+    "pre-publish": "vsce publish --no-dependencies --pre-release"
   },
   "contributes": {
     "snippets": [
