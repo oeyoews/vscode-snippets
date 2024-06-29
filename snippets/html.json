@@ -1,29 +1,21 @@
 {
-	"tailwindcss": {
-		"prefix": "tailwindcss",
-		"body": "<script src=\"https://cdn.tailwindcss.com\"></script>"
-	},
-	"Tailwind CSS Starter": {
-		"prefix": "html-tw",
-		"body": [
-			"<!DOCTYPE html>",
-			"<html lang=\"en\">",
-			"",
-			"<head>",
-			"\t<meta charset=\"UTF-8\">",
-			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-			"\t<script src=\"https://cdn.tailwindcss.com\"></script>",
-			"\t<title>$1</title>",
-			"</head>",
-			"",
-			"<body>",
-			"\t<div class=\"container mx-auto\">",
-			"\t\t$2",
-			"\t</div>",
-			"</body>",
-			"",
-			"</html>"
-		],
-		"description": "Tailwind CSS Starter Template"
-	}
+  "Html-tailwindcss": {
+    "prefix": "html-tailwindcss",
+    "body": [
+      "<!doctype html>",
+      "<html>",
+      "<head>",
+      "  <meta charset=\"UTF-8\">",
+      "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "  <script src=\"https://cdn.tailwindcss.com\"></script>",
+      "</head>",
+      "<body>",
+      "  <h1 class=\"text-3xl font-bold underline text-clifford\">",
+      "    Hello world!${1}",
+      "  </h1>",
+      "</body>",
+      "</html>"
+    ],
+    "description": "html with tailwindcss"
+  }
 }

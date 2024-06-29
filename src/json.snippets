@@ -1,0 +1,14 @@
+snippet 'vscode-dev' 'launch json'
+{
+	"version": "0.2.0",
+    "configurations": [
+        {
+          "type": "node-terminal",
+          "name": "本地插件打包",
+          "request": "launch",
+          "command": "pnpm run package",
+          "cwd": "${workspaceFolder}"
+        }
+    ]
+}
+endsnippet

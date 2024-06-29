@@ -1,20 +1,20 @@
 {
-  "Launch Dev": {
-    "prefix": "vscode-dev",
+  "'vscode-dev'": {
+    "prefix": "'vscode-dev'",
     "body": [
       "{",
-      "  \"version\": \"0.2.0\",",
-      "  \"configurations\": [",
-      "    {",
-      "      \"type\": \"node-terminal\",",
-      "      \"name\": \"开发模式\",",
-      "      \"request\": \"launch\",",
-      "      \"command\": \"pnpm run dev\",",
-      "      \"cwd\": \"${workspaceFolder}\"",
-      "    }",
-      "  ]",
+      "\t\"version\": \"0.2.0\",",
+      "    \"configurations\": [",
+      "        {",
+      "          \"type\": \"node-terminal\",",
+      "          \"name\": \"本地插件打包\",",
+      "          \"request\": \"launch\",",
+      "          \"command\": \"pnpm run package\",",
+      "          \"cwd\": \"${workspaceFolder}\"",
+      "        }",
+      "    ]",
       "}"
     ],
-    "description": "Launch development configuration"
+    "description": "launch json"
   }
 }

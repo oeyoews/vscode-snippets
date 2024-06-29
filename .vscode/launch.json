@@ -18,7 +18,14 @@
           "name": "本地插件打包",
           "request": "launch",
           "command": "pnpm run package",
-          "cwd": "workspaceFolder"
+          "cwd": "${workspaceFolder}"
+        },
+        {
+          "type": "node-terminal",
+          "name": "代码转换",
+          "request": "launch",
+          "command": "pnpm run convert",
+          "cwd": "${workspaceFolder}"
         }
     ]
 }

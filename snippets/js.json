@@ -1,21 +1,16 @@
 {
-	"Log": {
-		"prefix": "clog",
-		"body": "console.log($1)",
-		"description": "console.log()"
-	},
-	"esm": {
-		"prefix": "esm",
-		"body": [
-			"export default {",
-			"\t$1",
-			"}"
-		]
-	},
-	"const": {
-		"prefix": "cst",
-		"body": [
-			"const ${1:foo} = ${2:value}"
-		]
-	}
+  "Clg": {
+    "prefix": "clg",
+    "body": [
+      "console.log(${1})"
+    ],
+    "description": "console.log"
+  },
+  "Cjson": {
+    "prefix": "cjson",
+    "body": [
+      "console.log('$data', JSON.stringify($data))"
+    ],
+    "description": "对象log"
+  }
 }
